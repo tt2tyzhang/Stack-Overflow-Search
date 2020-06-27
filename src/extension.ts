@@ -4,13 +4,17 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
+const extractError = (text: string) => {
+	const extracted = text.match(/\d+:\d+: error: .*/gi);
+	return extracted;
+};
 
 const captureTerminal = () => {
 	vscode.commands.executeCommand('workbench.action.terminal.selectAll').then(() => {
 		vscode.commands.executeCommand('workbench.action.terminal.copySelection').then(() => {
 			vscode.commands.executeCommand('workbench.action.terminal.clearSelection').then(() => {
 				vscode.env.clipboard.readText().then((text)=>{
-					console.log(text);
+					console.log(extractError(text));
 				});
 			});
 		});
