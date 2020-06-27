@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:help-overflow.helloWorld"
+        "onCommand:help-overflow.searchErrors"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "help-overflow.helloWorld",
-                "title": "Hello World"
+				"command": "help-overflow.searchErrors",
+                "title": "Search Errors"
 			}
 		]
 	},
