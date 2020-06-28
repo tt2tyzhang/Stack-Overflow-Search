@@ -2,7 +2,8 @@
 
 import { ExtensionContext } from "vscode";
 
-// Terrible hacks... this is a hackathon but this is beyond the level of a hack or spaghetti code i think. If have more time maybe try using react
+// Terrible hacks... this is a hackathon but this is beyond the level of a hack or spaghetti code I think
+// If have more time maybe try using react and of course clean and modularize the code a ton
 const generateHTML = (searchResults: any) => {
     const headWebViewHTML = `<!DOCTYPE html>
 	<html lang="en">

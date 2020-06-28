@@ -3,6 +3,7 @@
 	"displayName": "HelpOverflow",
 	"description": "",
 	"version": "0.0.1",
+	"publisher": "tt2zhang",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
